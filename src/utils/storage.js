@@ -25,3 +25,21 @@ export function clearApplications() {
     // ignore
   }
 }
+
+const ONBOARDED_KEY = 'job-app-tracker-onboarded'
+
+export function hasOnboarded() {
+  try {
+    return localStorage.getItem(ONBOARDED_KEY) === 'true'
+  } catch {
+    return true
+  }
+}
+
+export function markOnboarded() {
+  try {
+    localStorage.setItem(ONBOARDED_KEY, 'true')
+  } catch {
+    // ignore
+  }
+}
