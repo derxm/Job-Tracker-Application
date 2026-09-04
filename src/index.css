@@ -123,6 +123,12 @@ button {
   font-size: 1.6rem;
 }
 
+.sidebar__logo-img {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
 .sidebar__nav {
   display: flex;
   flex-direction: column;

@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import logo from '../assets/logo.svg'
 
 const navLinks = [
   { to: '/', label: 'Dashboard', icon: 'grid' },
@@ -11,9 +12,7 @@ export default function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar__brand">
-        <span className="sidebar__logo" aria-hidden="true">
-          💼
-        </span>
+        <img src={logo} alt="" className="sidebar__logo-img" />
         <span className="sidebar__name">JobTracker</span>
       </div>
 
